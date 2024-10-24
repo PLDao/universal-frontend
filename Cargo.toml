@@ -4,6 +4,7 @@ authors = ["afk@afk.com"]
 edition = "2021"
 rust-version = "1.80.1"
 repository = "https://github.com/emojackob/rust-admin.git"
+description = "rust react egui admin"
 license = "MIT OR Apache-2.0"
 
 
