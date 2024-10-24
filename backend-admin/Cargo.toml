@@ -8,8 +8,6 @@ repository.workspace = true
 description.workspace = true
 license.workspace = true
 
-include = ["src/**", "Cargo.toml", "README.md", "dist/**"]
-
 [dependencies]
 warp.workspace = true
 tokio.workspace = true
