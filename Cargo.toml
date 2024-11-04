@@ -1,0 +1,41 @@
+[workspace.package]
+version = "0.0.1"
+authors = ["afk@afk.com"]
+edition = "2021"
+rust-version = "1.80.1"
+repository = "https://github.com/emojackob/rust-admin.git"
+description = "rust react egui admin"
+license = "MIT OR Apache-2.0"
+
+
+[workspace]
+resolver = "2"
+members = ["backend-admin"]
+
+
+[workspace.lints.clippy]
+all = { level = "allow", priority = -100 }
+correctness = { level = "deny", priority = -50 }
+suspicious = { level = "deny", priority = -50 }
+perf = { level = "deny", priority = -50 }
+# overrides clippy::perf = "deny": https://github.com/rust-lang/rust-clippy/issues/8111
+single_char_pattern = "allow"
+clone_on_copy = "deny"
+derivable_impls = "deny"
+redundant_clone = "deny"
+len_zero = "deny"
+or_fun_call = "deny"
+unnecessary_lazy_evaluations = "deny"
+
+
+[workspace.dependencies]
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+serde = "1.0.69"
+serde_json = "1.0.69"
+tokio = { version="1.38.0", features = ["full"] }
+egui = { version = "0.28.1", features = ["default"] }
+eframe = { version = "0.28.1", default-features = false }
+egui_extras = {version = "0.28.1", default-features = false}
+warp = { version = "0.3.7"}
+jwt-simple = "0.12.6"

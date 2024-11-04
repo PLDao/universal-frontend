@@ -1,0 +1,21 @@
+[package]
+name = "backend-admin"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+description.workspace = true
+license.workspace = true
+
+[dependencies]
+warp.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+rust-embed = "8.5.0"
+rust-embed-impl = "8.5.0"
+mime_guess = "2.0.5"
+
+[lints]
+workspace = true
